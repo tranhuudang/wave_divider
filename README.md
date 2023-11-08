@@ -12,10 +12,6 @@ align="center" src="https://img.shields.io/pub/v/wave_divider.svg" alt="pub vers
 
 ![](https://github.com/tranhuudang/wave_divider/blob/master/example/assets/screenshot_1.png?raw=true)
 
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
 
 ## Usage
 
