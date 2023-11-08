@@ -1,7 +1,7 @@
 name: wave_divider
 description: A simple wavy divider package.
 version: 0.0.1
-homepage:
+homepage: https://github.com/tranhuudang/wave_divider
 
 environment:
   sdk: '>=3.1.5 <4.0.0'
