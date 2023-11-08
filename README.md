@@ -1,35 +1,30 @@
-## wave_divider
+# wave_divider
 
-#### A simple wave divider
+A simple wave divider widget for Flutter.
 
-<p >
-<a href="https://img.shields.io/badge/License-MIT-green"><img 
-align="center" src="https://img.shields.io/badge/License-MIT-green" alt="MIT License"></a>  
-<a href="https://github.com/tranhuudang/wave_divider/stargazers"><img align="center" src="https://img.shields.io/github/stars/tranhuudang/wave_divider?style=flat&logo=github&colorB=green&label=stars" alt="stars"></a>  
-<a href="https://pub.dev/packages/wave_divider/versions/0.0.1"><img 
-align="center" src="https://img.shields.io/pub/v/wave_divider.svg" alt="pub version"></a>
-</p>  
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/tranhuudang/wave_divider?style=flat&logo=github&colorB=green&label=stars)](https://github.com/tranhuudang/wave_divider/stargazers)
+[![Pub Version](https://img.shields.io/pub/v/wave_divider.svg)](https://pub.dev/packages/wave_divider/)
 
-![](https://github.com/tranhuudang/wave_divider/blob/master/example/assets/screenshot_1.png?raw=true)
-
+![Screenshot](https://github.com/tranhuudang/wave_divider/blob/master/example/assets/screenshot_1.png?raw=true)
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-Use 'WaveDivider()' if you want the default.
+The `WaveDivider` widget provides a simple wave divider that you can customize. Here are some usage examples:
+
+1. Using the default divider:
 ```dart
-WaveDivider()
+   WaveDivider()
 ```
 
 or a little bit of custom with:
-```dart
-WaveDivider(
-  thickness: 3,
-  color: Colors.amber,
-  waveHeight: 7,
-  waveWidth: 14,
-),
+```dart 
+    WaveDivider(
+      thickness: 3,
+      color: Colors.amber,
+      waveHeight: 7,
+      waveWidth: 14,
+    )
 ```
 
 ### Support the Library
