@@ -17,7 +17,7 @@ The `WaveDivider` widget provides a simple wave divider that you can customize. 
    WaveDivider()
 ```
 
-or a little bit of custom with:
+   or a little bit of custom with:
 ```dart 
     WaveDivider(
       thickness: 3,
