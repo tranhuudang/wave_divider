@@ -1,22 +1,16 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+## wave_divider
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+#### A simple wave divider
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+<p >
+<a href="https://img.shields.io/badge/License-MIT-green"><img 
+align="center" src="https://img.shields.io/badge/License-MIT-green" alt="MIT License"></a>  
+<a href="https://github.com/tranhuudang/wave_divider/stargazers"><img align="center" src="https://img.shields.io/github/stars/tranhuudang/wave_divider?style=flat&logo=github&colorB=green&label=stars" alt="stars"></a>  
+<a href="https://pub.dev/packages/wave_divider/versions/0.0.1"><img 
+align="center" src="https://img.shields.io/pub/v/wave_divider.svg" alt="pub version"></a>
+</p>  
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+![](https://github.com/tranhuudang/wave_divider/blob/master/example/assets/screenshot_1.png?raw=true)
 
 ## Getting started
 
@@ -27,13 +21,22 @@ start using the package.
 
 TODO: Include short and useful examples for package users. Add longer examples
 to `/example` folder.
-
+Use 'WaveDivider()' if you want the default.
 ```dart
-const like = 'sample';
+WaveDivider()
 ```
 
-## Additional information
+or a little bit of custom with:
+```dart
+WaveDivider(
+  thickness: 3,
+  color: Colors.amber,
+  waveHeight: 7,
+  waveWidth: 14,
+),
+```
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+### Support the Library
+
+You can support the library by liking it on pub, staring in on Github and reporting any bugs you
+encounter.
