@@ -3,46 +3,50 @@ library wave_divider;
 import 'package:flutter/material.dart';
 
 class WaveDivider extends StatelessWidget {
-  final Color? color;
-  final double thickness;
-  final double waveHeight;
-  final double waveWidth;
-  final double verticalPadding;
-  const WaveDivider(
-      {super.key,
-        this.thickness = 1,
-        this.color,
-        this.waveHeight = 5,
-        this.waveWidth = 10,
-        this.verticalPadding = 8});
+  final Color? color; // Color of the divider, null for default
+  final double thickness; // Thickness of the divider line
+  final double waveHeight; // Height of the wave pattern
+  final double waveWidth; // Width of each wave segment
+  final double verticalPadding; // Vertical padding around the divider
+  const WaveDivider({
+    super.key,
+    this.thickness = 1,
+    this.color,
+    this.waveHeight = 5,
+    this.waveWidth = 10,
+    this.verticalPadding = 8,
+  });
 
   @override
   Widget build(BuildContext context) {
     final contextColor = Theme.of(context).dividerColor;
     return Padding(
-      padding:  EdgeInsets.symmetric(vertical: verticalPadding),
+      padding: EdgeInsets.symmetric(vertical: verticalPadding),
       child: CustomPaint(
         size: const Size(double.infinity, 0),
         painter: SymmetricalWavyDividerPainter(
-            waveColor: color ?? contextColor,
-            strokeWidth: thickness,
-            height: waveHeight,
-            width: waveWidth),
+          waveColor: color ?? contextColor,
+          strokeWidth: thickness,
+          height: waveHeight,
+          width: waveWidth,
+        ),
       ),
     );
   }
 }
 
 class SymmetricalWavyDividerPainter extends CustomPainter {
-  final Color waveColor;
-  final double strokeWidth;
-  final double height;
-  final double width;
-  SymmetricalWavyDividerPainter(
-      {required this.height,
-        required this.width,
-        required this.waveColor,
-        required this.strokeWidth});
+  final Color waveColor; // Color of the wave pattern
+  final double strokeWidth; // Stroke width of the wave pattern
+  final double height; // Height of the wave pattern
+  final double width; // Width of each wave segment
+  SymmetricalWavyDividerPainter({
+    required this.height,
+    required this.width,
+    required this.waveColor,
+    required this.strokeWidth,
+  });
+
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
@@ -84,4 +88,3 @@ class SymmetricalWavyDividerPainter extends CustomPainter {
     return false;
   }
 }
-

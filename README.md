@@ -1,6 +1,6 @@
 # wave_divider
 
-A simple wave divider widget for Flutter.
+The wave_divider package is a versatile Flutter widget that enables you to add beautiful, wave-like dividers to your UI. Whether you want to enhance the visual appeal of your app or create a decorative separation between sections, the WaveDivider widget makes it easy and customizable.
 
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/tranhuudang/wave_divider?style=flat&logo=github&colorB=green&label=stars)](https://github.com/tranhuudang/wave_divider/stargazers)
