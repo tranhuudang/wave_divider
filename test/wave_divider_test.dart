@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:wave_divider/wave_divider.dart'; // Import the WaveDivider widget
+import 'package:wave_divider/src/wave_divider.dart'; // Import the WaveDivider widget
 
 void main() {
   testWidgets('WaveDivider widget test', (WidgetTester tester) async {
@@ -13,7 +13,7 @@ void main() {
             thickness: 2,
             waveHeight: 8,
             waveWidth: 16,
-            verticalPadding: 12,
+            padding: EdgeInsets.symmetric(vertical: 12),
           ),
         ),
       ),
@@ -31,6 +31,6 @@ void main() {
     expect(waveDivider.thickness, 2);
     expect(waveDivider.waveHeight, 8);
     expect(waveDivider.waveWidth, 16);
-    expect(waveDivider.verticalPadding, 12);
+    expect(waveDivider.padding, 12);
   });
 }

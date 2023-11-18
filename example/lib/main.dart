@@ -17,16 +17,20 @@ class MyApp extends StatelessWidget {
         ),
         body: const Center(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text("Default Wave Divider"),
               WaveDivider(),
               Text("Custom Wave Divider"),
-              WaveDivider(
-                thickness: 3,
-                color: Colors.amber,
-                waveHeight: 7,
-                waveWidth: 14,
+              SizedBox(
+                height: 200,
+                child: WaveDivider.vertical(
+                  color: Colors.blue,
+                  thickness: 5,
+                  waveWidth: 10,
+                  waveHeight: 15,
+                ),
               ),
             ],
           ),

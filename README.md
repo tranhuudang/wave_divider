@@ -14,7 +14,13 @@ The `WaveDivider` widget provides a simple wave divider that you can customize. 
 
 1. Using the default divider:
 ```dart
-   WaveDivider()
+    // Horizontal divider
+    WaveDivider()
+    // Vertical divider
+    SizedBox(
+      height: 200, 
+      child: WaveDivider.vertical(),
+    )
 ```
 
    or a little bit of custom with:
@@ -24,6 +30,7 @@ The `WaveDivider` widget provides a simple wave divider that you can customize. 
       color: Colors.amber,
       waveHeight: 7,
       waveWidth: 14,
+      isVertical: false,
     )
 ```
 
